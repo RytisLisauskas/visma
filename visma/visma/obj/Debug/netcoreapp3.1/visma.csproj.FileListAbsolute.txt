@@ -1,0 +1,12 @@
+/Users/rytis/work/c#/vismaNow/visma/visma/bin/Debug/netcoreapp3.1/visma.deps.json
+/Users/rytis/work/c#/vismaNow/visma/visma/bin/Debug/netcoreapp3.1/visma.runtimeconfig.json
+/Users/rytis/work/c#/vismaNow/visma/visma/bin/Debug/netcoreapp3.1/visma.runtimeconfig.dev.json
+/Users/rytis/work/c#/vismaNow/visma/visma/bin/Debug/netcoreapp3.1/visma.dll
+/Users/rytis/work/c#/vismaNow/visma/visma/bin/Debug/netcoreapp3.1/visma.pdb
+/Users/rytis/work/c#/vismaNow/visma/visma/obj/Debug/netcoreapp3.1/visma.csprojAssemblyReference.cache
+/Users/rytis/work/c#/vismaNow/visma/visma/obj/Debug/netcoreapp3.1/visma.AssemblyInfoInputs.cache
+/Users/rytis/work/c#/vismaNow/visma/visma/obj/Debug/netcoreapp3.1/visma.AssemblyInfo.cs
+/Users/rytis/work/c#/vismaNow/visma/visma/obj/Debug/netcoreapp3.1/visma.csproj.CoreCompileInputs.cache
+/Users/rytis/work/c#/vismaNow/visma/visma/obj/Debug/netcoreapp3.1/visma.dll
+/Users/rytis/work/c#/vismaNow/visma/visma/obj/Debug/netcoreapp3.1/visma.pdb
+/Users/rytis/work/c#/vismaNow/visma/visma/obj/Debug/netcoreapp3.1/visma.genruntimeconfig.cache
