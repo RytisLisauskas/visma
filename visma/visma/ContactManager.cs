@@ -25,7 +25,6 @@ namespace visma
             foreach (Contact con in this.MyContacts) {
                 if (!con.Name.ToLower().Equals(contact.Name) || !con.LastName.ToLower().Equals(contact.LastName)) { 
                         if (con.PhoneNumber.Equals(contact.PhoneNumber)) {
-                            Console.WriteLine(con.PhoneNumber + " " + contact.PhoneNumber);
                             return false;
                         }
                     }
@@ -79,8 +78,7 @@ namespace visma
             }
             if (field.Equals("number"))
             {
-                Contact tempCont = new Contact(con.Name, con.LastName, update, con.Address);
-                ShowContacts();
+                Contact tempCont = new Contact(con.Name, con.LastName, update, con.Address);              
                 if (IsContactValid(tempCont))
                 {
                     con.PhoneNumber = update;
