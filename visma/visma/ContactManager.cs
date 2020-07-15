@@ -23,9 +23,13 @@ namespace visma
 
         public Boolean IsContactValid(Contact contact) {
             foreach (Contact con in this.MyContacts) {
-                if ((!con.Name.ToLower().Equals(contact.Name) || !con.LastName.ToLower().Equals(contact.LastName)) && con.PhoneNumber.Equals(contact.PhoneNumber)) {
-                    return false;
-                }
+                if (!con.Name.ToLower().Equals(contact.Name) || !con.LastName.ToLower().Equals(contact.LastName)) { 
+                        if (con.PhoneNumber.Equals(contact.PhoneNumber)) {
+                            Console.WriteLine(con.PhoneNumber + " " + contact.PhoneNumber);
+                            return false;
+                        }
+                    }
+                    
                 if (con.Name.Equals(contact.Name) && con.LastName.Equals(contact.LastName) && con.PhoneNumber.Equals(contact.PhoneNumber)) {
                     return false;
                 }
@@ -53,6 +57,7 @@ namespace visma
           }
         public void EditContact(int index, string update, string field) {            
             Contact con = retrieveContact(index);
+            Console.WriteLine();
             if (field.Equals("name")) {
                 con.Name = update;
                 if (IsContactValid(con))
@@ -74,10 +79,14 @@ namespace visma
             }
             if (field.Equals("number"))
             {
-                con.PhoneNumber = update;
-                if (AddContact(con)==1)
+                Contact tempCont = new Contact(con.Name, con.LastName, update, con.Address);
+                ShowContacts();
+                if (IsContactValid(tempCont))
                 {
+                    con.PhoneNumber = update;
                     DeleteContact(index);
+                    AddContact(con);
+                    
                     
                 }
                 return;

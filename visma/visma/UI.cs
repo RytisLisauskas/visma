@@ -95,6 +95,7 @@ namespace visma
                     default:
                         //bad input
                         Console.WriteLine("Invalid input, repeat");
+                        PrintMenu();
                         RequestInput();
                         break;
                 }
